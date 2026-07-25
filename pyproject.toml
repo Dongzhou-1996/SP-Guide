@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sp-guide"
+version = "0.1.0"
+description = "Minimal SP-Guide implementation for aerial vision-language navigation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "ttthhx"}]
+dependencies = [
+  "numpy>=1.23",
+  "torch>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["sp_guide*"]
+
